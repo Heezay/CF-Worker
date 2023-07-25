@@ -22,9 +22,9 @@ jobs:
         run: npm install
 
       - name: Build worker
-        run: npm run build
+        run: npx wrangler dev
 
       - name: Deploy worker
         env:
           CF_API_TOKEN: ${{ secrets.CF_API_TOKEN }}
-        run: npx wrangler publish
+        run: npx wrangler deploy
