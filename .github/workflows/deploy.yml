@@ -28,8 +28,8 @@ jobs:
         with:
           version: nightly
 
-      - name: Install dependencies
-        run: pnpm i --frozen-lockfile
+      # - name: Install dependencies
+      #   run: pnpm i --frozen-lockfile
 
       - name: Build worker
         run: pnpm build
