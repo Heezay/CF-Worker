@@ -1,7 +1,7 @@
 name = "aged-wood-0749"
 main = "src/worker.js"
 compatibility_date = "2023-07-24"
-account_id = "${{ secrets.CLOUDFLARE_ACCOUNT_ID }}"
+# account_id = "${{ secrets.CLOUDFLARE_ACCOUNT_ID }}"
 
 # Variable bindings. These are arbitrary, plaintext strings (similar to environment variables)
 # Note: Use secrets to store sensitive data.
