@@ -1,7 +1,7 @@
 name = "aged-wood-0749"
 main = "src/worker.js"
 compatibility_date = "2023-07-24"
-account_id = "${{ secrets.CF_API_TOKEN }}"
+account_id = "dsT9NXLPl_Q7u_hvI4yRvDFny0nw3m9QU5_P2m3n"
 
 # Variable bindings. These are arbitrary, plaintext strings (similar to environment variables)
 # Note: Use secrets to store sensitive data.
