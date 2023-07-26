@@ -1,3 +1,15 @@
+import { createHttpHandler } from '@trpc/server/adapters/http';
+import { router } from './api';
+
+addEventListener('fetch', (event) => {
+	event.respondWith(
+	  createHttpHandler({
+		router,
+		createContext: () => null, // or your context creation logic here
+	  })(event.request),
+	);
+  });
+  
 export default {
 	async fetch(request) {
 	  const html = `<!DOCTYPE html>
