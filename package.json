@@ -4,25 +4,11 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "wrangler dev",
-    "lint": "eslint --cache --ext \".js,.ts,.tsx\" --report-unused-disable-directives src",
-    "test-dev": "start-server-and-test 'wrangler dev --local' http://127.0.0.1:8787 'tsx src/client.ts'"
+    "deploy": "wrangler publish"
   },
   "dependencies": {
-    "@trpc/client": "^10.36.0",
     "@trpc/server": "^10.36.0",
     "zod": "^3.0.0"
-  },
-  "devDependencies": {
-    "@cloudflare/workers-types": "^4.0.0",
-    "@types/node": "^18.16.16",
-    "eslint": "^8.40.0",
-    "start-server-and-test": "^1.12.0",
-    "tsx": "^3.12.7",
-    "typescript": "^5.1.3",
-    "wrangler": "^2.0.17"
-  },
-  "publishConfig": {
-    "access": "restricted"
   }
 }
+ 
